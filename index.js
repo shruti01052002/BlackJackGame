@@ -1,8 +1,23 @@
 let arr = [];
+function getRandomCard() 
+{
+    let randomNumer = Math.floor( Math.random()*13 ) + 1;
+    if (randomNumer > 10) 
+    {
+        return 10;
+    } 
+    else if (randomNumer === 1) 
+    {
+        return 11;
+    } else 
+    {
+        return randomNumer;
+    }
+}
 function startgame()
 {
-    let num1 = Math.floor(Math.random() * 21);
-    let num2 = Math.floor(Math.random() * 21);
+    let num1 = getRandomCard();
+    let num2 = getRandomCard();
     if(document.getElementById('start').innerHTML==='START GAME')
     {
         document.getElementById('sum').innerHTML = "Sum: ";
@@ -15,7 +30,7 @@ function startgame()
     let su = num1+num2;
     document.getElementById('sum').innerHTML = "Sum: "+su;
     arr.push(su);
-    if(su>21)
+    if(su<21)
     {
         document.getElementById('head2').innerHTML = "OOPS! Better Luck Next Time.😐"
         document.getElementById('moves').innerHTML = "Moves: "+arr.length;
