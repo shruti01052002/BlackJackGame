@@ -1,0 +1,29 @@
+#head {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    color: rgb(234, 218, 5);
+}
+#start-div {
+    text-align: center;
+}
+#start {
+    background-color: rgb(234, 218, 5);
+    height: 60px;
+    width: 240px;
+    border: none;
+    color:  rgb(30, 140, 30);
+    font-weight: 800;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    background-color: rgb(30, 140, 30);
+}
+#head2, #cards, #sum, #moves, #head3 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
